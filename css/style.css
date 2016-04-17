@@ -1352,7 +1352,7 @@ ul.footer-list li a:hover{
 .image-section{
 	width:100%;
 	position:relative;
-	background: url(http://placehold.it/1920x1280);
+	background: url(../images/bar-img/wall-main.JPG);
 	background-position: center center;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1405,7 +1405,7 @@ ul.footer-list li a:hover{
 .home-menu-section{
 	width:100%;
 	position:relative;
-	background: url(http://placehold.it/1920x1280) 50% 0 no-repeat fixed;
+	background: url(../images/bar-img/food.JPG) 50% 0 no-repeat fixed;
     background-size: cover;
 	color: white;
 	margin: 0 auto;
@@ -1870,3 +1870,11 @@ p.contact_success_box{
 	}
 	
 }
+
+/**************
+Custom sytling
+****************/
+.navbar-header a.logo-link {
+	margin-top: 0;
+}
+
