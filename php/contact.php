@@ -8,7 +8,7 @@ $field_phone = $_POST['phone'];
 
 $field_message = $_POST['message'];
 
-$mail_to = 'to@email.com';
+$mail_to = 'kren1221@yahoo.com';
 
 $subject = 'Message from a site visitor '.$field_first_name;
 
@@ -23,6 +23,11 @@ $body_message .= 'Message: '.$field_message;
 $headers = 'From: '.$field_email."\r\n";
 
 $headers .= 'Reply-To: '.$field_email."\r\n";
+
+// add these so the mail won't be sent to the junk folder
+$headers .= "X-Mailer: PHP/".phpversion();
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 
